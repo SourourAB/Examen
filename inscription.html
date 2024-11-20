@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription / Réclamation</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html"> Missions Militaires </a></li>
+                <li> <a href="inscription.html"> Inscription / Réclamation </a></li>
+                <li> <a href="equipements.html"> Equipements Militaires </a></li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        <h1> Formulaire d'inscription ou réclamation </h1>
+        <table>
+            <tr>
+                <td> <label for="name"> Nom: </label></td>
+                <td>
+                    <input type="text" name="name" id="name" required>
+                    <br> </td>
+            </tr>
+            <tr>
+                <td> <label for="id"> Prénom : </label></td>
+                <td>
+                    <input type="text" name="name" id="id" required>
+                    <br> </td>
+            </tr>
+            <tr>
+                <td> <label for="grade"> Grade : </label></td>
+                <td>
+                    <select name="grade" id="grade">
+                        <option value="Soldat"> Soldat </option>
+                        <option value="Sergent"> Sergent </option>
+                        <option value="Lieutenant"> Lieutenant </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="email"> Email : </label></td>
+                <td> <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required>
+                <br>
+            </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td> <label for="text"> Message  : </label></td>
+            </tr> 
+            <tr >
+                <td ><textarea cols="40" rows="7"></textarea></td>
+                <td></td>
+            </tr>
+
+        </table>
+        Joindre un fichier 
+        <input type="file" id="choisirFichier" name="fichier" accept=".jpg, .jpeg, .png , pdf">
+        <br>
+        <br>
+<input type="submit" value="Envoyer" required>
+    </form>
+
+</body>
+
+</html>
